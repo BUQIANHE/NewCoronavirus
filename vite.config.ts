@@ -35,8 +35,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  server: {
-    port: 5053, //启动端口
-    host: '0.0.0.0',
-  }
+  // server: {
+  //   port: 5053, //启动端口
+  //   host: '0.0.0.0',
+  // }
 })

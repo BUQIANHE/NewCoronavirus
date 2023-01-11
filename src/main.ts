@@ -3,7 +3,7 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-
+import { initMockData } from '@/mock'
 
 import App from './App.vue'
 import router from './router'
@@ -11,6 +11,10 @@ import router from './router'
 import './assets/main.css'
 import './assets/common.scss'
 
+// 开发环境初始化数据
+if(process.env.NODE_ENV === 'development'){
+  initMockData()
+}
 
 const app = createApp(App)
 
